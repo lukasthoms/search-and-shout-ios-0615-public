@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FISDataStore.h"
+#import "FISDanceMove.h"
 
-@interface FISSearchViewController : UIViewController
+@interface FISSearchViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
+
+@property (strong, nonatomic) NSArray *searchArray;
 
 @end
